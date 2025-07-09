@@ -1,18 +1,94 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Jump</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario Jump</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="gameBoard">
-        <img src="images/clouds.png" alt="Nuvens" class="clouds">
-        <img src="images/mario.gif" alt="Personagem Mario" class="mario">
-        <img src="images/pipe.png" alt="Cano" class="pipe">
-    </div>
-</body>
+  <!-- Área principal do jogo -->
+  <main class="gameBoard">
+    <!-- Menu principal com opções do jogo -->
+    <div id="mainMenu" class="menu">
+      <h1>Mario Jump</h1>
+      <!-- Campo para nome do jogador -->
+      <input type="text" id="playerName" placeholder="Seu nome" />
+      <!-- Seleção do personagem -->
+      <select id="player">
+        <option value="mario">Mario</option>
+        <option value="luigi">Luigi</option>
+      </select>
 
-<script src="script.js"></script>
+      <!-- Botões do menu -->
+      <button onclick="startGame()">Iniciar Jogo</button>
+      <button onclick="pauseGame()">Pausar / Continuar</button>
+      <button onclick="showModal('settingsModal')">Configurações</button>
+      <button onclick="showModal('creditsModal')">Créditos</button>
+      <button onclick="showModal('rankingModal')">Ranking</button>
+      <button onclick="showModal('instructionsModal')">Instruções</button>
+    </div>
+
+    <!-- HUD de pontuação durante o jogo -->
+    <div class="hud">Pontuação: <span id="score">0</span></div>
+
+    <!-- Elementos gráficos do jogo -->
+    <img src="images/clouds.png" alt="Nuvens" class="clouds" />
+    <img src="images/pipe.png" alt="Cano" class="pipe" id="pipe" />
+  </main>
+
+  <!-- Modal de configurações -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('settingsModal')">&times;</span>
+      <h2>Configurações</h2>
+      <label>Velocidade:</label>
+      <select id="speedSelect">
+        <option value="2">Normal</option>
+        <option value="1.5">Rápido</option>
+        <option value="2.5">Lento</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Modal de créditos -->
+  <div id="creditsModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('creditsModal')">&times;</span>
+      <h2>Créditos</h2>
+      <p>Desenvolvido por Robson Junior</p>
+      <ul>
+        <li><a href="https://www.instagram.com/robsonjuniordev/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/robsonjuniortj" target="_blank">GitHub</a></li>
+        <li><a href="https://www.tiktok.com/@robsonjuniordev" target="_blank">TikTok</a></li>
+        <li><a href="https://www.youtube.com/@robsonjuniordev" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal de ranking -->
+  <div id="rankingModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('rankingModal')">&times;</span>
+      <h2>Ranking</h2>
+      <ul id="rankingList"></ul>
+    </div>
+  </div>
+
+  <!-- Modal de instruções -->
+  <div id="instructionsModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('instructionsModal')">&times;</span>
+      <h2>Instruções</h2>
+      <p>Pressione qualquer tecla ou toque na tela para pular.</p>
+      <p>Desvie dos canos e acumule pontos a cada salto bem-sucedido.</p>
+      <p>Pressione ESC para pausar ou continuar o jogo.</p>
+    </div>
+  </div>
+
+  <!-- Script do jogo -->
+  <script src="script.js"></script>
+</body>
 </html>

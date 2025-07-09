@@ -1,29 +1,91 @@
-# PortfolioMaisPraTi
+🧠 Projeto: PortfolioMaisPraTi
+Este é um portfólio profissional criado por Robson Junior, com o objetivo de apresentar seus projetos pessoais desenvolvidos durante sua jornada como Desenvolvedor Full Stack e Desenhista Digital.
 
-## Inicio
+O projeto é composto por diversas seções: apresentação, sobre, serviços, portfólio, contato e um jogo interativo estilo "Mario Jump".
 
-Apresentação e profissão. Foi criado com o auxílio de uma imagem e utilizando o Gerador de CSS Glassmorphism para dar o efeito de desfoque no fundo.
+🛠 Tecnologias Utilizadas
+HTML5 semântico
 
-### Sobre
+CSS3 com responsividade e personalização
 
-  Quem sou eu. Nessa seção, eu apresento algumas das coisas que eu faço no dia a dia, ou estou aprendendo ainda.
+JavaScript moderno
 
-#### Serviços
+Bootstrap 5
 
-Destaca algumas habilidades que tenho e alguns serviços que realizei.
+Font Awesome
 
-##### Portfólio
+Google Maps API
 
-Apresenta os projetos que aprendi ao longo do curso do MaisPraTi juntamente com o Codifica. Eles são o projeto Estante de livros, Locadora 2000, Mario web e Cartão Virtual, que pode ser aberto em uma nova guia e podemos visualizar o projeto feito individualmente.
+Lógica de jogo com animações e interações
 
-###### Contato
+Design acessível e mobile-first
 
-Mostra um mapa com a cidade onde resido que é Salvador, meu telefone, email e minhas redes sociais, com o links embutidos entre eles.
+📁 Estrutura das Pastas
+bash
+Copiar
+Editar
+PortfolioMaisPraTi/
+│
+├── index.html                → Página principal do portfólio
+├── style.css                 → Estilos personalizados
+├── script.js                 → Scripts JS (interações e lógica)
+├── /images                   → Imagens usadas no site
+├── /portfolio
+│   ├── Estante/              → Projeto Estante de Livros
+│   ├── Locadora/             → Projeto Locadora 2000
+│   ├── Mario/                → Projeto Mario Web Game
+│   ├── Cartao/               → Projeto Cartão Virtual (flip)
+│
+└── README.md                 → Documentação do projeto
+🖼 Seções do Portfólio
+Início: Apresentação pessoal com efeito glassmorphism.
 
-###### Footer
+Sobre Mim: Descrição dinâmica com idade atualizada automaticamente via JS.
 
-Mostra novamente as minhas redes sociais com os links embutidos, para serem aberto em uma nova guia e finaliza com o meu nome.
+Serviços: Projetos organizados por categoria (com links e imagens).
 
-# Agradecimento Final
+Portfólio: Visualização detalhada dos projetos com link direto.
 
-Aproveito a oportunidade aqui para expressar minha gratidão a você Professor Henrique Casagrande, pela sua disposição em ensinar nesses ultimos meses, aprendi bastante com a sua ajuda e ensinamento e espero conseguir dentre em breve uma vaga no mercado de trabalho nessa área. Obrigado! E espero o começo das aulas Bônus.
+Contato: Mapa de localização (Salvador - BA) e redes sociais com ícones interativos.
+
+Footer: Personalizado com créditos e links sociais.
+
+🎮 Jogo Mario Jump
+Um mini-game interativo incluso no portfólio com funcionalidades como:
+
+Seleção de personagem (Mario ou Luigi)
+
+Contagem de pontos
+
+Ranking
+
+Pausar / Continuar
+
+Modais de instrução, ranking e configurações
+
+🚀 Como Executar Localmente
+bash
+Copiar
+Editar
+# Clone o repositório
+git clone https://github.com/robsonjuniortj/PortfolioMaisPraTi.git
+
+# Acesse a pasta do projeto
+cd PortfolioMaisPraTi
+
+# Abra no VS Code
+code .
+Abra o arquivo index.html no navegador para visualizar o portfólio.
+
+🌐 Meus Contatos
+LinkedIn : https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/
+
+GitHub : https://github.com/robsonjuniortj
+
+Instagram : https://www.instagram.com/_robson_junior_tj/
+
+TikTok : https://www.tiktok.com/@_robson_junior_tj?is_from_webapp=1&sender_device=pc
+
+YouTube : https://www.youtube.com/@_robson_junior_tj
+
+📧 Email: rnjrtj@gmail.com

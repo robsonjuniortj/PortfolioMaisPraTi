@@ -1,134 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartão de visitas</title>
-    <style>
-        body {
-            background-color: #643a7a;
-        }
-
-        .frame {
-            position: absolute;
-            background-color: #201c29;
-            top: 50%;
-            left: 50%;
-            width: 400px;
-            height: 400px;
-            margin-top: -200px;
-            margin-left: -200px;
-            box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
-            border-radius: 6px;
-        }
-
-        .frame, 
-        .card {
-            display:flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .flip-me {
-            position: absolute;
-            top: 20%;
-            left: 77%;
-            font-size: 20px;
-            transform: rotate(-90deg);
-        }
-
-        .front h1{
-            font-size: 2.5rem;
-            margin: 1rem 3rem;
-            color: #ef2f96;
-        }
-
-        p{
-            position: absolute;
-            top: 60%;
-            left: 10%;
-            color: rgba(255, 255, 255, 0.2);
-        }
-
-        .card:hover .flip {
-            transform: rotateX(180deg) translate3d(0, 0, 0);
-        }
-
-        .flip {
-            transform-style: preserve-3d;
-            transition: all 0.7s ease-in-out;
-            perspective: 1000px;
-        }
-
-        .front, 
-        .back {
-            -webkit-backface-visibility: hidden;
-            width: 100%;
-            height: 100%;
-            background-color: #201c29;
-        }
-
-        .card .back {
-            transform: rotateX(-180deg);
-            position: absolute;
-            top: 10;
-            left: 10;
-        }
-
-        .back {
-            letter-spacing: 2px;
-            text-align: center;
-        }
-
-        .back h2 {
-            font-size: 2rem;
-            color: #ef2f96;
-        }
-        .back h3 {
-            font-size: 1.8rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .network > a > img {
-            width: 32px;
-        }
-        .network > a > img:hover {
-            cursor: pointer;
-            width: 42px;
-        }
-        .network {
-            display: flex;
-            gap: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartão de Visitas - Robson Junior</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="frame">
-        <div class="card">
-            <div class="flip">
-                <div class="front">
-                    <h1>Olá</h1>
-                    <p class="flip-me">Flip</p>
-                </div>
-
-                <div class="back">
-                    <h2>Robson Junior</h2>
-                    <h3>Desenhista, Full Stack</h3>
-
-                    <div class="network">
-                        <a href="https://github.com/RNJRTJ" target="_blank">
-                            <img src="images/github.svg" alt="Logo Github" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/" target="_blank">
-                            <img src="images/linkedin.svg" alt="Logo Linkedin" />
-                        </a>
-                        <a href="https://www.instagram.com/_robson_junior_tj/" target="_blank">
-                            <img src="images/instagram.svg" alt="Logo Instagram" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <main class="frame" role="main" aria-label="Cartão de visitas interativo">
+    <article class="card" tabindex="0" aria-live="polite">
+      <section class="flip">
+        <!-- Frente do cartão -->
+        <div class="front">
+          <h1>Olá</h1>
+          <p class="flip-me" aria-hidden="true">Flip</p>
         </div>
-    </div>
+
+        <!-- Verso do cartão -->
+        <div class="back">
+          <h2>Robson Junior</h2>
+          <h3>Desenvolvedor Full Stack</h3>
+          <nav class="network" aria-label="Redes sociais de Robson Junior">
+            <a href="https://github.com/robsonjuniortj" target="_blank" rel="noopener" aria-label="GitHub">
+              <img src="images/github.svg" alt="Logo Github" />
+            </a>
+            <a href="https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="images/linkedin.svg" alt="Logo Linkedin" />
+            </a>
+            <a href="https://www.youtube.com/@_robson_junior_tj" target="_blank" rel="noopener" aria-label="YouTube">
+              <img src="images/youtube.svg" alt="Logo YouTube" />
+            </a>
+            <a href="https://www.tiktok.com/@_robson_junior_tj" target="_blank" rel="noopener" aria-label="TikTok">
+              <img src="images/tiktok.svg" alt="Logo TikTok" />
+            </a>
+            <a href="https://www.instagram.com/_robson_junior_tj/" target="_blank" rel="noopener" aria-label="Instagram">
+              <img src="images/instagram.svg" alt="Logo Instagram" />
+            </a>
+          </nav>
+        </div>
+      </section>
+    </article>
+  </main>
 </body>
 </html>

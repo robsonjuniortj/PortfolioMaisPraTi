@@ -1,395 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Robson</title>
-
-    <!-- Arquivo CSS-->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Arquivo JS-->
-    <script src="script.js"></script>
-
-    <!-- Arquivo Booststrap-->
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
-    crossorigin="anonymous"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio profissional de Robson Junior - Desenhista e Desenvolvedor Full Stack"
     />
-    <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
-    crossorigin="anonymous"
+    <title>Portfólio | Robson Oliveira Gomes Junior</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
     ></script>
 
-    <script 
-    src="https://kit.fontawesome.com/b3935c80df.js" 
-    crossorigin="anonymous"
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b3935c80df.js"
+      crossorigin="anonymous"
     ></script>
+  </head>
 
-  </body>
-</head>
-<body>
-    <!-- Menu Fixado -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Robson Junior</a>
-            <button ]
-                class="navbar-toggler"
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="#navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Navegação do toggle"
-            >
-                <span 
-                class="navbar-toggler-icon" 
-                ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
+  <body>
+    <!-- ======= Navbar ======= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Robson Junior</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <!-- Fim Menu Fixado -->
 
-    <!-- Hero Section -->
-    <section class="bgimage" id="inicio">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="glass">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heroText">
-                        <h1 class="heroTitle">Olá, me chamo Robson Junior</h1>
-                        <p class="heroDesc">Sou Desenhista e estudante de Full Stack na Recode Pro</p>
-                    </div>
-                </div>
-            </div>
+    <!-- ======= Hero Section ======= -->
+    <header id="inicio" class="bg-secondary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Olá! Eu sou o Robson Junior</h1>
+        <p class="lead">
+          Desenhista e Desenvolvedor Full Stack em formação pela Recode Pro
+        </p>
+      </div>
+    </header>
+
+    <!-- ======= Sobre Mim ======= -->
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Sobre Mim</h2>
+        <div class="row align-items-center mt-4">
+          <div class="col-md-4">
+            <img
+              src="images/my.gif"
+              alt="Imagem sobre mim"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-8">
+            <p>
+              Sou um desenvolvedor Full Stack apaixonado por transformar ideias
+              em soluções digitais reais. Tenho experiência sólida em
+              tecnologias como Java, React.js, Spring Boot, .NET, C#,
+              JavaScript, MySQL e MongoDB. Concluí o programa intensivo da
+              RecodePro em 2024 com projetos reais em equipe, e atualmente
+              participo do programa Desenvolve + Grupo Boticário (junho–outubro
+              2025). Também produzo conteúdos artísticos em desenhos realistas a
+              lápis, com milhares de visualizações no TikTok e YouTube.
+            </p>
+            <ul>
+              <li>Nome: Robson Oliveira Gomes Junior</li>
+              <li>Idade: <span id="idadeAtual">27 Anos</span></li>
+              <li>Ocupação: Desenvolvedor Full Stack e Desenhista</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Fim Hero Section -->
-    
-    <!-- About Section -->
-    <section id="sobre">
-        <div class="container mt-4 pt-4">
-            <h2 class="text-center">Sobre Mim</h2>
-            <div class="row mt-4">
-                <!-- Imagem Sobre Mim -->
-                <div class="col-lg-4">
-                    <img src="images/my.gif" alt="Sobre Mim" class="aboutImage" />
-                </div>
 
-                <!-- Informações Sobre Mim -->
-                <div class="col-lg-8">
-                    <p>
-                        Sou um desenhista em desenvolvimento, gosto muito de desenhar personagens variados, pessoas,
-                        animais etc... sou aberto a explorar novas áreas de conhecimento, mas tenho mais interesse
-                        mesmo na área da tecnologia, onde eu vejo um futuro para mim, e espero em Deus, que eu
-                        consiga realizar esse sonho e desejo, para poder assim alcançar meus objetivos na vida.
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Nome: Robson Oliveira Gomes Junior</li>
-                                <li>Idade: 25 Anos</li>
-                                <li>Ocupação: Desenhista e estudante de Full Stack</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Parágrafo + infos -->
-                    <div class="row mt-3">
-                        <p>
-                        Atualmente sou Estudante da Recode Pro, e ao final do curso, terei conhecimento
-                        de Desenvolvedor Full Stack Junior em JavaScript | C# | Python | Java | Spring | ReactJS 
-                        | Html5/Css3 | SQL | MongoDB | Booststrap
-                        </p>
-                    </div>
+    <!-- ======= Serviços ======= -->
+    <section id="servicos" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">Serviços</h2>
+        <div class="row mt-4">
+          <!-- Desenhos -->
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="images/desenhoThumb.png"
+                alt="Imagem desenho"
+                class="card-img-top"
+              />
+
+              <div class="card-body">
+                <h3 class="card-title">Hobbie: Desenhar</h3>
+                <p class="card-text">
+                  Criação de artes manuais e digitais com foco em personagens.
+                </p>
+                <div class="d-flex justify-content-around">
+                  <a
+                    href="https://www.youtube.com/@_robson_junior_tj"
+                    target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/_robson_junior_tj/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a
+                    href="https://www.tiktok.com/@_robson_junior_tj"
+                    target="_blank"
+                    ><i class="fa-brands fa-tiktok"></i
+                  ></a>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Site de Viagens -->
+          <div class="col-md-6">
+            <div class="card">
+              <img
+                src="images/viagemThumb.png"
+                alt="Imagem site de viagem"
+                class="card-img-top"
+              />
+              
+              <div class="card-body">
+                <h3 class="card-title">Site de Viagens</h3>
+                <p class="card-text">
+                  Site com promoções e destinos turísticos
+                </p>
+                <a
+                  href="https://github.com/robsonjuniortj/SiteDeViagem"
+                  target="_blank"
+                  >Ver no GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Mario -->
+          <div class="col-md-6 mt-4">
+            <div class="card">
+              <img
+                src="portfolio/thumbs/marioThumb.png"
+                alt="Mario Web"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Game Mario</h3>
+                <p class="card-text">
+                  Projeto interativo de jogo 2D baseado no universo Mario.
+                </p>
+                <a href="portfolio/Mario/index.html" target="_blank"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Locadora 2000 -->
+          <div class="col-md-6 mt-4">
+            <div class="card">
+              <img
+                src="portfolio/thumbs/locadoraThumb.png"
+                alt="Locadora 2000"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Locadora 2000</h3>
+                <p class="card-text">
+                  Catálogo de filmes com estilo retrô, com tabelas organizadas.
+                </p>
+                <a href="portfolio/Locadora/index.html" target="_blank"
+                  >Ver Projeto</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Fim About Section -->
 
-    <!-- Service or Skills Section -->
-    <section id="servicos">
-        <div class="container">
-            <h2 class="text-center">Serviços</h2>
-            <!-- Uma linha -->
-            <div class="row">
-                <!-- Uma Coluna-->
-                <div class="col-lg-6 mt-4">
-                    <div class="card servicesText">
-                        <div class="cardBody">
-                            <i class="fa-solid fa-check servicesIcon"></i>
-                            <h3 class="cardTitle mt-3">Hobbie: Desenhar</h3>
-                            <p class="cardText">Exemplo de trabalhos feitos</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Outra Coluna-->
-                <div class="col-lg-6 mt-4">
-                    <div class="card servicesText">
-                        <div class="cardBody">
-                            <i class="fa-solid fa-check servicesIcon"></i>
-                            <h3 class="cardTitle mt-3">Site de Viagens</h3>
-                            <p class="cardText">
-                                Exemplo de trabalhos feitos
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        <!-- Outra linha -->
+    <!-- ======= Portfólio ======= -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Portfólio</h2>
         <div class="row">
-            <div class="col-lg-6 mt-4">
-                <div class="card servicesText">
-                    <div class="cardBody">
-                        <i class="fa-solid fa-check servicesIcon"></i>
-                        <h3 class="cardTitle mt-3">Game Mario</h3>
-                        <p class="cardText">Exemplo de trabalhos feitos</p>
-                    </div>
-                </div>
+          <!-- Projeto Estante -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="portfolio/thumbs/estanteThumb.png"
+                class="card-img-top"
+                alt="Estante de Livros"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Estante de Livros</h3>
+                <p class="card-text text-center">
+                  Projeto básico usando HTML e CSS com listas e tabelas.
+                </p>
+                <a
+                  href="portfolio/Estante/estante.html"
+                  class="btn btn-outline-primary d-block mx-auto"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </div>
             </div>
-            <!-- Outra Coluna-->
-            <div class="col-lg-6 mt-4">
-                <div class="card servicesText">
-                    <div class="cardBody">
-                        <i class="fa-solid fa-check"></i>
-                        <h3 class="cardTitle mt-3">Locadora 2000</h3>
-                        <p class="cardText">
-                            Exemplo de trabalhos feitos
-                        </p>
-                    </div>
-                </div>
+          </div>
+
+          <!-- Projeto Cartão Virtual -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="portfolio/thumbs/cartaoThumb.png"
+                class="card-img-top"
+                alt="Cartão Virtual"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Cartão Virtual</h3>
+                <p class="card-text text-center">
+                  Cartão animado com estilo profissional e interativo.
+                </p>
+                <a
+                  href="portfolio/Cartao/index.html"
+                  class="btn btn-outline-primary d-block mx-auto"
+                  target="_blank"
+                  >Ver Projeto</a
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Fim Service or Skills Section -->
 
-    <!-- Portfólio  section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h2 class="text-center mb-3">Portfólio</h2>
+    <!-- ======= Contato ======= -->
+    <section id="contato" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">Contate-me</h2>
+        <div class="row mt-4">
+          <!-- Mapa -->
+          <div class="col-md-6 mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248901.97965264527!2d-38.585!3d-12.9017134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1752076576634!5m2!1spt-BR!2sbr"
+              width="335"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <img 
-                        class="card-img-top" 
-                        src="portfolio/thumbs/estanteThumb.png" 
-                        alt="Card Estante"
-                        style="width: 100"
-                        />
-                        <div class="cardBody">
-                            <h3 class="cardTitle">Projeto Estante de livros</h3>
-                            <p class="cardText text-center">
-                                Primeiro projeto com HTML e CSS, desenvolvido no curso Do Zero
-                                Ao Primeiro Site, ofertado pelo grupo +prati. Neste projeto
-                                dei meus primeiros passos com o desenvolvimento web e 
-                                trabalhei com divisões, imagens, listas ordenadas e tabelas.
-                            </p>
-                            <div class="text-center mb-3">
-                                <a href="portfolio/Estante/estante.html" target="_blank"
-                                >Link
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                        <img 
-                        class="card-img-top" 
-                        src="portfolio/thumbs/locadoraThumb.png" 
-                        alt="Card Locadora"
-                        style="width: 100%"
-                        />
-                        <div class="cardBody">
-                            <h3 class="cardTitle">Projeto Locadora 2000</h3>
-                            <p class="cardText text-center">
-                                Segundo projeto Locadora 2000. Nesse projeto aprendir a adicionar 
-                                tabelas de forma organizada, utilizando HTML, CSS, JS e bootstrap 
-                                de forma completa e fácil de entender. Usando apenas 4 ferramenta 
-                                diferentes.
-                            </p>
-                            <div class="text-center mb-3">
-                                <a href="portfolio/Locadora/index.html" target="_blank"
-                                    >Link
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Contatos -->
+          <div class="col-md-6">
+            <div class="row text-center">
+              <div class="col-4 mb-3">
+                <a href="mailto:rnjrtj@gmail.com"
+                  ><i class="fa-regular fa-envelope contactIcon"></i
+                  ><br />Email</a
+                >
+              </div>
+              <div class="col-4 mb-3">
+                <a href="https://github.com/robsonjuniortj" target="_blank"
+                  ><i class="fa-brands fa-github"></i><br />GitHub</a
+                >
+              </div>
+              <div class="col-4 mb-3">
+                <a
+                  href="https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i><br />LinkedIn</a
+                >
+              </div>
+              <div class="col-4 mb-3">
+                <a
+                  href="https://www.instagram.com/_robson_junior_tj/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i><br />Instagram</a
+                >
+              </div>
+              <div class="col-4 mb-3">
+                <a
+                  href="https://www.tiktok.com/@_robson_junior_tj"
+                  target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i><br />TikTok</a
+                >
+              </div>
+              <div class="col-4 mb-3">
+                <a
+                  href="https://www.youtube.com/@_robson_junior_tj"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube"></i><br />YouTube</a
+                >
+              </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <img 
-                        class="card-img-top" 
-                        src="portfolio/thumbs/marioThumb.png" 
-                        alt="Card Mario"
-                        style="width: 100%;"
-                        />
-                        <div class="cardBody">
-                            <h3 class="cardTitle">Projeto Mario web</h3>
-                            <p class="cardText text-center">
-                               Terceiro projeto Mario Web, nesse projeto fiz a minha primeira interação 
-                               com o usuario, de forma animada e divertida. Construir do zero o primeiro 
-                               modelo de um jogo, relembrei um pouco a infância, deu uma certa nostalgia 
-                               no momento da finalização.
-                            </p>
-                            <div class="text-center mb-3">
-                                <a href="portfolio/Mario/index.html" target="_blank"
-                                >Link
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                        <img 
-                        class="card-img-top" 
-                        src="portfolio/thumbs/cartaoThumb.png" 
-                        alt="Card Cartao"
-                        style="width: 100%;"
-                        />
-                        <div class="cardBody">
-                            <h3 class="cardTitle">Projeto Cartão Virtual</h3>
-                            <p class="cardText text-center">
-                                Quarto projeto Cartão Virtual, utilizando animação. Foi bastante dinâmico
-                                e funcional, uma forma diferente de se apresentar por meio de um portfolio.
-                                usando algumas funções que ainda não havia testado, e foi bom para aumenta o
-                                meu aprendizado.
-                            </p>
-                            <div class="text-center mb-3">
-                                <a href="portfolio/Cartao/index.html" target="_blank"
-                                    >Link
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Fim Portfólio  section-->
 
-    <!-- Contatos  section-->
-    <section id="contato">
-        <div class="container mt-3 mb-3 coontactContent">
-            <h2 class="text-center">Contate Me</h2>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248928.14463606552!2d-38.666611980868254!3d-12.875392706465224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716037ca23ca5b3%3A0x1b9fc7912c226698!2sSalvador%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1692237459568!5m2!1spt-BR!2sbr" 
-                    width="600" 
-                    height="550" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card servicesText">
-                                <div class="cardBody">
-                                    <i class="fa-solid fa-mobile contactIcon"></i>
-                                    <h3>Telefone</h3>
-                                    <p>(71) 996037822</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card servicesText">
-                                <div class="cardBody">
-                                    <i class="fa-regular fa-envelope contactIcon"></i>
-                                    <h3>Email</h3>
-                                    <p>rnjrtj@gmail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-lg-3">
-                            <a href="https://github.com/RNJRTJ" target="_blank">
-                                <i class="fa-brands fa-github-alt contactIcon"></i>
-                            </a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/" target="_blank">
-                                <i class="fa-brands fa-linkedin contactIcon"></i>
-                            </a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="https://www.facebook.com/Rnjrtj" target="_blank">
-                                <i class="fa-brands fa-facebook contactIcon"></i>
-                            </a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="https://www.instagram.com/_robson_junior_tj/" target="_blank">
-                                <i class="fa-brands fa-instagram contactIcon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fim Contatos  section-->
-
-    <!-- Footer -->
-    <footer class="text-center text-white">
-        <div class="container p-4 pb-0">
-            <div class="row mt-4 mb-4">
-                <div class="col-lg-3">
-                    <a href="https://github.com/RNJRTJ" target="_blank"
-                        ><i class="fa-brands fa-github-alt footerIcon"></i
-                    ></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://www.linkedin.com/in/robson-oliveira-gomes-junior-729600190/" target="_blank"
-                        ><i class="fa-brands fa-linkedin footerIcon"></i
-                    ></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://www.facebook.com/Rnjrtj" target="_blank"
-                        ><i class="fa-brands fa-facebook footerIcon"></i
-                    ></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href="https://www.instagram.com/_robson_junior_tj/" target="_blank"
-                        ><i class="fa-brands fa-instagram footerIcon"></i
-                    ></a>
-                </div>
-                </div>
-            </div>
-            <div class="text-center p-3 footerDev">
-                <p> Desenvolvido por Robson Junior </p>
-            </div>
+    <!-- ======= Footer ======= -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Robson Junior. Todos os direitos reservados.
+        </p>
+        <small
+          >Criado com dedicação por um apaixonado por arte e tecnologia.</small
+        >
+      </div>
     </footer>
-    <!-- Fim Footer -->
-</body>
+  </body>
 </html>

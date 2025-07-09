@@ -1,0 +1,58 @@
+/* Navbar e Footer com a mesma cor */
+.bg-primary {
+  background-color: #006342 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #90ee90 !important; /* verde claro */
+}
+
+/* Footer */
+footer {
+  font-family: Arial, sans-serif;
+}
+
+/* Melhor alinhamento do logo na navbar */
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+/* Tabela */
+.table-primary {
+  background-color: #009f6b !important;
+  color: white;
+}
+
+/* Formulario */
+form label {
+  font-weight: 600;
+}
+
+/* Botão */
+.btn-primary {
+  background-color: #009f6b;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #007f4f;
+  outline: none;
+  box-shadow: 0 0 8px #007f4f;
+}
+
+/* Espaçamento */
+main h1,
+section h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #004d33;
+}
+
+/* Responsividade extra */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}

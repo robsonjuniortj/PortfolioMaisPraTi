@@ -1,46 +1,50 @@
 function validationForm() {
-    let validationCod = document.forms['register']["cod"].value;
-    let validationTitle = document.forms['register']["title"].value;
-    let validationDirector = document.forms['register']["director"].value;
-    let validationDate = document.forms['register']["date"].value;
-    let validationRadio = document.forms['register']["radio"].value;
-
-    if(validationCod == "") {
-        alert("O Código deve ser preenchido");
-        return false;
-    }
-    if(validationTitle == "") {
-        alert("O título deve ser preenchido");
-        return false;
-    }
-    if(validationDirector == "") {
-        alert("O Nome do diretor deve ser preenchido");
-        return false;
-    }
-    if(validationDate == "") {
-        alert("A data deve ser preenchida");
-        return false;
-    }
-    if(validationRadio == "") {
-        alert("O Gênero deve ser preenchido");
-        return false;
-    }
+  // Exemplo simples de validação
+  const codFilm = document.getElementById("codFilm");
+  const titleFilm = document.getElementById("titleFilm");
+  if (!codFilm.value || !titleFilm.value) {
+    alert("Por favor, preencha os campos Código e Título.");
+    return false;
+  }
+  return true;
 }
 
 function insert() {
-    let cod = document.forms['register']['cod'].value;
-    let title = document.forms['register']['title'].value;
-    let director = document.forms['register']['director'].value;
-    let date = document.forms['register']['date'].value;
-    let radio = document.forms['register']['radio'].value;
+  if (!validationForm()) return;
 
-    let insert = window.document.getElementById("insertRow");
+  const tbody = document.querySelector("tbody#insertRow").parentElement;
+  const cod = document.getElementById("codFilm").value;
+  const title = document.getElementById("titleFilm").value;
+  const director = document.getElementById("directorFilm").value;
+  const date = document.getElementById("yearFilm").value;
+  const actors = document.getElementById("atoresPrincipal").value;
+  const imdb = document.getElementById("notaImdb").value;
+  const genre = document.querySelector('input[name="genre"]:checked')?.value || '';
 
-    insert.innerHTML = `
+  // Traduzindo valor do gênero para exibir na tabela
+  const genresMap = {
+    'acao': 'Ação',
+    'animacao': 'Animação',
+    'romance': 'Romance',
+    'suspense': 'Suspense'
+  };
+
+  const tr = document.createElement("tr");
+
+  tr.innerHTML = `
     <th scope="row">${cod}</th>
     <td>${title}</td>
     <td>${director}</td>
     <td>${date}</td>
-    <td>${radio}</td>
-    `;
+    <td>${genresMap[genre] || genre}</td>
+    <td>${actors}</td>
+    <td>${imdb}</td>
+  `;
+
+  tbody.appendChild(tr);
+
+  // Limpa formulário
+  document.forms["register"].reset();
+
+  alert("Filme cadastrado com sucesso!");
 }

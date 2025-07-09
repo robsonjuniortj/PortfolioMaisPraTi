@@ -1,0 +1,137 @@
+/* Fundo da página */
+body {
+  background-color: #643a7a;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.frame {
+  background-color: #201c29;
+  width: 400px;
+  height: 400px;
+  box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1200px; /* Para o efeito 3D */
+}
+
+/* Card que vai virar */
+.card {
+  width: 360px;
+  height: 360px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Flip no hover e foco */
+.card:hover,
+.card:focus {
+  transform: rotateX(180deg);
+  outline: none;
+}
+
+/* Seção que envolve frente e verso */
+.flip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: inherit;
+}
+
+/* Frente e verso */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  background-color: #201c29;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Frente */
+.front h1 {
+  font-size: 3rem;
+  color: #ef2f96;
+  margin: 1rem 0;
+}
+
+.flip-me {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 1.2rem;
+  color: #ef2f96;
+  transform: rotate(-90deg);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Verso */
+.back {
+  transform: rotateX(180deg);
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ef2f96;
+  padding: 0 1rem;
+}
+
+.back h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.back h3 {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+/* Redes sociais */
+.network {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.network a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  filter: brightness(1) saturate(1);
+  transition: filter 0.3s ease;
+}
+
+.network a:hover,
+.network a:focus {
+  filter: brightness(0.8) saturate(1.5);
+  outline: none;
+}
+
+.network img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: invert(41%) sepia(94%) saturate(491%) hue-rotate(91deg) brightness(97%) contrast(87%);
+  /* Essa filter deixa o ícone no tom verde padrão #006342 */
+}
